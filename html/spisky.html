@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Приклади списків</title>
+	<link rel="shortcut icon" type="image/png" href="../img/cat.png">
+	<link href="../css/style_menu.css" rel="stylesheet">
+	<style>
+		nav li {
+    		list-style-type: none; /* Убираем маркеры */
+   		}
+   		nav ul {
+    		margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    		padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   		}
+   		.topic1 {
+			color: red;
+		}
+		.topic2 {
+			color: yellow;
+		}
+		.topic3 {
+			color: green;
+		}
+		dt {
+			font-style: italic;
+			font-weight: bold
+		}
+
+	</style>
+</head>
+<body>
+	<a href="../index.html">На головну</a>
+	<nav>
+		<div class="side">
+			<ul class="menu">
+				<li class="menu__list"><a hreh="#">Знайомство з HTML і CSS  </a>
+					<ul class="menu__drop">
+			<li><a href="pochatok.html"> Знайомство з тегами, атрибутами тегів</a></li>
+			<li><a href="https://htmlacademy.ru/courses/299" target="_blank" title="Перехід на сайт htmlacademy.ru">  Структура HTML документа</a></li>
+			<li><a href="https://htmlacademy.ru/courses/301" target="_blank" title="Перехід на сайт htmlacademy.ru">Розмітка текста</a></li>
+			<li><!-- <a href="html\spisky.html"> --> Списки<!-- </a> --></li>
+			<li><a href="tabs.html">Таблиці</a></li>
+			</ul>
+			</li>	
+			<li class="menu__list"><a href="#">Мультимедіа та гіперпосилання</a>
+					<ul class="menu__drop">
+			<li><a href="links.html"> Гіперпосилання</a></li>
+			<li><a href="picture.html">Графічні зображення</a></li>
+			<li><a href="media.html">Відео та звук</a></li>
+			</ul>
+			</li>	
+		</ul>
+	</div>
+	</nav>	
+
+<article>
+	<ol type="I" start="1">
+		<li class="topic1">Частина 1</li>
+		<li class="topic2">Частина 2</li>
+		<li class="topic3">Частина 3</li>
+	</ol>
+</article>
+
+	
+
+
+	<div>
+		<dl>
+		<dt>Тег</dt>
+        <dd>    − це  спеціальний символ розмітки, який застосовується 
+        для вставки різних елементів на веб-сторінку таких як: малюнки, таблиці, 
+        посилання та ін., і для зміни їх виду.</dd> 
+        <dt>HTML-документ</dt>
+        <dd>    − це звичайний текстовий файл, який може містити в
+         собі текст, теги і стилі. Зображення та інші об'єкти зберігаються окремо.</dd> 
+        <dd> Вміст такого файлу зазвичай називається HTML-кодом. </dd>
+         <dt>Сайт</dt>
+        <dd>    − це набір окремих веб-сторінок, які пов'язані між 
+        собою посиланнями і єдиним оформленням.</dd>
+    	</dl>
+	</div>
+	
+	<!-- 1. Невпорядкований список починається з контейнеру <ul>, а кожен пункт списку починається з тега <li>. Впорядкований з тега <ol>.
+	2. Для вибору стилю маркера використовується атрибут type тега <ul>. Щоб почати список з певного значення, використовується атрибут start тега <ol>. При цьому не має значення, який тип списку встановлений за допомогою type, атрибут start однаково працює і з римськими, і з арабськими числами.	 -->
+</body>
+</html>

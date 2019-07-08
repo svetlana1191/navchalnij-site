@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Формa</title>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/style_form.css">
+	</head>
+	<body class="form">
+		<form>
+			<fieldset>
+		<legend> Заповніть особисті дані</legend>
+				<div>
+					<label>
+				Прізвище 
+				<input type="text" name="lastname" required="" placeholder="Baranetc">
+					</label>
+
+				</div>
+				<div>
+					<label>
+				Ім'я 
+				<input type="text" name="firstname" required="" placeholder="Svitlana">
+					</label>
+				</div>
+				<div>
+					<label>
+				По-батькові
+				<input type="text" name="middlename" required="" placeholder="Volodimirivna">
+					</label>
+				</div>
+				
+				<div>
+				<label>	
+				Стать:
+				</label>
+				<label>
+				 <input type="radio" name="sex" value="femail" shecked=""> Жіноча</label>
+				 <label><input type="radio" name="sex" value="mail">Чоловіча</label>
+				</div>
+
+				<div>
+					<label>
+				Дата народження <input type="date" name="birthday" required="">  
+					</label>
+				</div>
+
+				<div>
+					<label>	
+
+				 Область
+				 			<select name="region">
+				<option value="vin">	Вінницька</option>
+				<option value="vol">	Волинська</option>
+				<option value="dp" selected="">	Дніпропетровська</option>
+				<option value="don">	Донецька</option>
+				<option value="zhit">	Житомирська</option>
+				<option value="zak">	Закарпатська</option>
+				<option value="zap">	Запорізька</option>
+				<option value="if">	Івано-Франківська</option>
+				<option value="kiev">	Київська</option>
+							</select>
+						</label>
+				</div>
+			</fieldset>
+				<div>
+					<label>
+				Оберіть предмети тестування:</label>
+<ul>
+				 <li> <input type="checkbox" name="subject" value="math" checked="">   Математика</li>
+				 <li> <input type="checkbox" name="subject" value="ua" checked="">   Українська мова та література</li>
+					<li> <input type="checkbox" name="subject" value="en">   Англійська мова</li>
+					<li> <input type="checkbox" name="subject" value="biol">   Біологія</li>
+					<li> <input type="checkbox" name="subject" value="histUA">   Історія України</li>
+					<li> <input type="checkbox" name="subject" value="geog">   Географія</li>
+					<li> <input type="checkbox" name="subject" value="phis">   Фізика</li>
+					<li> <input type="checkbox" name="subject" value="chem">   Хімія</li>
+				</ul>
+				</div>
+	<div>
+		<label>
+			Завантажте сканкопії id-картки та даних про реєстрацію
+		</label>
+			<br>
+			<input type="file" name="file" accept="image/jpg">
+		
+	</div>
+	<div>
+			<textarea placeholder="За необхідності додайте свій коментар">
+			</textarea>
+	</div>
+
+ 	<div>
+			<button type="submit"> Відправити </button>
+			<button type="reset"> Оновити </button>
+	</div>
+			</form>
+	</body>
+</html>

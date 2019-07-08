@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Вставка медіа</title>
+	<link rel="shortcut icon" type="image/png" href="../img/cat.png">
+	<link href="../css/style_menu.css" rel="stylesheet">
+	<style>
+		nav li {
+    		list-style-type: none; /* Убираем маркеры */
+   		}
+   		nav ul {
+    		margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    		padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   		}
+   		.topic1 {
+			color: red;
+		}
+		.topic2 {
+			color: yellow;
+		}
+		.topic3 {
+			color: green;
+		}
+		dt {
+			font-style: italic;
+			font-weight: bold
+		}
+
+	</style>
+</head>
+<body>
+	<a href="../index.html">На головну</a>
+	<nav>
+		<div class="side">
+			<ul class="menu">
+				<li class="menu__list"><a hreh="#">Знайомство з HTML і CSS  </a>
+					<ul class="menu__drop">
+						<li><a href="html/pochatok.html"> Знайомство з тегами, атрибутами тегів</a></li>
+						<li><a href="https://htmlacademy.ru/courses/299" target="_blank" title="Перехід на сайт htmlacademy.ru">  Структура HTML документа</a></li>
+						<li><a href="https://htmlacademy.ru/courses/301" target="_blank" title="Перехід на сайт htmlacademy.ru">Розмітка текста</a></li>
+						<li><a href="html\spisky.html"> Списки</a></li>
+						<li><a href="html\tabs.html">Таблиці</a></li>
+					</ul>
+				</li>	
+				<li class="menu__list"><a href="#">Мультимедіа та гіперпосилання</a>
+					<ul class="menu__drop">
+						<li><a href="links.html"> Гіперпосилання</a></li>
+						<li><a href="picture.html">Графічні зображення</a></li>
+						<li><!-- <a href="media.html"> -->Відео та звук<!-- </a> --></li>
+					</ul>
+				</li>	
+			</ul>
+		</div>
+	</nav>	
+<hr>
+<div>
+
+	<audio src="../audio/rok_opera_mocart.mp3" controls></audio>
+</div>
+<hr>
+<div>	
+	<video src="../video/World_Cat.mp4" controls width="640" poster="../img/37_1.jpg"></video>
+</div>
+<hr>
+<div class="video">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/6xWnkWZ7nnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</body>
+</html>
